@@ -3,6 +3,9 @@
 <head>
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="./static/favicon.ico">
   <style type="text/css">
@@ -44,6 +47,13 @@
     .placeholder {
       flex-grow: 1;
     }
+
+    .timer {
+      color: white;
+      display: flex;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 12px;
+    }
   </style>
 </head>
 <body>
@@ -62,7 +72,14 @@
       <button class="js-mute-button player-button">
         <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
+      <div class="timer">
+        <span class="js-current-time"></span>
+      </div>
       <div class="placeholder"></div>
+      <div class="placeholder"></div>
+      <div class="timer">
+        <span class="js-duration"></span>
+      </div>
       <button class="js-fullscreen-button player-button">
         <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
