@@ -44,8 +44,25 @@
       margin-left: -2px;
     }
 
-    .placeholder {
+    .progress {
       flex-grow: 1;
+      padding-left: 10px;
+    }
+
+    .progressbar {
+      background-color: black;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    .progressbar-slide {
+      height: 5px;
+      background-color: #f8104d;
+      margin-top: 2px;
+      display: flex;
+      border-radius: 2px;
+      cursor: pointer;
     }
 
     .timer {
@@ -53,6 +70,20 @@
       display: flex;
       font-family: 'Roboto', sans-serif;
       margin-top: 12px;
+    }
+
+    .dot {
+      height: 9px;
+      width: 9px;
+      background-color: #f8104d;
+      cursor: pointer;
+      border-radius: 50%;
+      display: inline-block;
+      border: white;
+      border-width: 3px;
+      border-style: solid;
+      margin-top: 2px;
+      margin-left: -8px;
     }
   </style>
 </head>
@@ -75,8 +106,12 @@
       <div class="timer">
         <span class="js-current-time"></span>
       </div>
-      <div class="placeholder"></div>
-      <div class="placeholder"></div>
+      <div class="progress">
+        <div class="js-progress progressbar">
+          <div class="js-progress-slider progressbar-slide"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
       <div class="timer">
         <span class="js-duration"></span>
       </div>
