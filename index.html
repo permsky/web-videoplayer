@@ -39,9 +39,9 @@
       display: flex;
       flex-direction: column;
       width: 800px;
-      height: 599px;
+      height: 600px;
       box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 55%);
-      margin-top: -1px;
+      margin-top: -2px;
       margin-left: -2px;
     }
 
@@ -70,12 +70,12 @@
       color: white;
       display: flex;
       font-family: 'Roboto', sans-serif;
-      margin-top: 12px;
+      margin-top: 13px;
     }
 
     .dot {
-      height: 9px;
-      width: 9px;
+      height: 8px;
+      width: 8px;
       background-color: #f8104d;
       cursor: pointer;
       border-radius: 50%;
@@ -83,19 +83,24 @@
       border: white;
       border-width: 3px;
       border-style: solid;
-      margin-top: 2px;
+      margin-top: 3px;
       margin-left: -8px;
       opacity: 0;
       transition: opacity 300ms ease-out;
+      box-shadow: 0px 0px 5px 1px;
     }
 
     .progress:hover .dot {
       opacity: 1;
       transition: opacity 300ms ease-in;
     }
+
+    .body {
+      margin: 8px;
+    }
   </style>
 </head>
-<body>
+<body class="body">
   <div id="player" class="player">
     <div class="js-video-container video"></div>
     <div class="control-panel">
