@@ -1,21 +1,21 @@
-.player-button {
-    color: white;
-    background-color: transparent;
-    border-style: hidden;
-    cursor: pointer;
-    font-size: 20px;
-    line-height: 130%;
-    margin-right: 4px;
-    margin-left: 3px;
-    width: 30px;
-    height: 30px;
-  }
+.player-controlpanel-button {
+  color: white;
+  background-color: transparent;
+  border-style: hidden;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 130%;
+  margin-right: 4px;
+  margin-left: 3px;
+  width: 30px;
+  height: 30px;
+}
 
-.video {
+.player-video {
   flex-grow: 1;
 }
 
-.control-panel {
+.player-controlpanel {
   display: flex;
   flex-direction: row;
   background-color: black;
@@ -33,18 +33,18 @@
   margin-left: -2px;
 }
 
-.progress {
+.player-controlpanel-progress {
   flex-grow: 1;
   padding-left: 10px;
 }
 
-.progressbar {
+.player-controlpanel-progress-progressbar {
   background-color: black;
   display: flex;
   align-items: center;
 }
 
-.progressbar-slide {
+.player-controlpanel-progress-progressbar-slider {
   height: 5px;
   background-color: #f8104d;
   display: flex;
@@ -52,14 +52,14 @@
   cursor: pointer;
 }
 
-.timer {
+.player-controlpanel-timer {
   color: white;
   display: flex;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.dot {
+.player-controlpanel-progress-progressbar-dot {
   height: 8px;
   width: 8px;
   background-color: #f8104d;
@@ -75,7 +75,7 @@
   box-shadow: 0px 0px 5px 1px;
 }
 
-.progress:hover .dot {
+.player-controlpanel-progress:hover .player-controlpanel-progress-progressbar-dot {
   opacity: 1;
   transition: opacity 300ms ease-in;
 }
